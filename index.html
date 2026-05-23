@@ -68,7 +68,27 @@ align-items:center;
 height:75px;
 width:auto;
 }
+.logo-text{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+line-height:1;
+}
 
+.logo-main{
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+font-weight:500;
+letter-spacing:4px;
+color:white;
+}
+
+.logo-sub{
+font-size:14px;
+letter-spacing:3px;
+margin-top:4px;
+color:white;
+}
 .nav-menu{
 display:flex;
 gap:35px;
@@ -224,8 +244,9 @@ margin-bottom:10px;
 
 <div class="container nav-container">
 
-<div class="logo">
-<img src="assets/logo.png" alt="Psychology & Soul">
+<div class="logo-text">
+    <span class="logo-main">PSYCHOLOGY</span>
+    <span class="logo-sub">& SOUL</span>
 </div>
 
 <ul class="nav-menu">
