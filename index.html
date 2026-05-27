@@ -139,8 +139,21 @@ width:100%;
 .hero-left{
 flex:1;
 text-align:left;
+margin-left:40px;
 }
-
+.hero-images{
+display-flex;
+flex-direction:column;
+gap:25px;
+align-items:flex-start;
+}
+.hero-images img{
+width:100%;
+max-width:320px;
+border-radius:25px;
+object-fit:cover;
+box-shadow:0 20px 40px rgba(0,0,0,.20);
+}
 .hero-right{
 flex:1;
 display:flex;
@@ -313,8 +326,10 @@ margin-bottom:10px;
     Modern psychology is used in schools, hospitals, businesses, sports, and therapy to improve mental
     health and human relationships.
 </p>
-<div class="hero-right">
+<div class="hero-images">
 <img src="psy1.jpg" alt="Psychology">
+<div class="hero-right">
+<img src="psy2.jpg" alt="Psychology">
 </div>
 
 </div>
