@@ -272,25 +272,26 @@ align-items:center;
 }
 
 .about-card{
-padding:45px;
-border-radius:35px;
+text-align:center;
+padding:55px 45px;
+border-radius:38px;
 background:rgba(255,255,255,.18);
 backdrop-filter:blur(18px);
 border:1px solid rgba(255,255,255,.35);
-box-shadow:0 10px 35px rgba(0,0,0,.12);
-margin-bottom:20px;
+box-shadow:
+0 10px 35px rgba(0,0,0,.10),
+inset 0 1px 1px rgba(255,255,255,.4);
 position:relative;
 overflow:hidden;
-}
-about-card{
-animation: floating 4s ease-in-out infinite;
+animation:floating 5s ease-in-out infinite;
 }
 
 .about-card:nth-child(2){
 animation-delay:3s;
 }
 
-@keyframes floatcards{
+@keyframes floating{
+
 0%{
 transform:translateY(0px);
 }
@@ -302,6 +303,43 @@ transform:translateY(-12px);
 100%{
 transform:translateY(0px);
 }
+}
+
+.card-icon{
+width:78px;
+height:78px;
+border-radius:50%;
+background:rgba(255,255,255,.55);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+margin:0 auto 25px;
+color:#6e654f;
+}
+
+.about-card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:44px;
+line-height:1.1;
+font-weight:600;
+color:#4f4635;
+margin-bottom:18px;
+}
+
+.about-card p{
+font-size:22px;
+line-height:1.9;
+color:#5f5a4d;
+max-width:420px;
+margin:25px auto 0;
+}
+
+.card-leaf{
+margin-top:35px;
+font-size:34px;
+color:#8a8367;
+opacity:.7;
 }
 .title-divider{
 display:flex;
@@ -324,18 +362,23 @@ color:#8a8367;
 }
 .about-card h3{
 font-family:'Cormorant Garamond',serif;
-font-size:48px;
-line-height:1.1;
-font-weight:600
-color-:#4f4735;
-margin-buttom:30px;
+font-size:42px;
+line-height:1.15;
+font-weight:600;
+color:#4f4635;
+margin-bottom:25px;
+max-width:320px;
+margin-left:auto;
+margin-right:auto;
 }
+
 .about-card p{
-font-size:20px;
+font-size:19px;
 line-height:1.8;
 color:#5f5a4d;
 font-weight:400;
-margin-top:20px;
+max-width:420px;
+margin:20px auto 0;
 }
 </style>
 </head>
@@ -431,17 +474,46 @@ Through compassionate guidance and evidence-based approaches, we help clients di
 <div>
 
 <div class="about-card">
-<h3>Emotions & Dicisions</h3>
+
+<div class="card-icon">🧠</div>
+
+<h3>Emotions and Decisions</h3>
+
+<div class="title-divider">
+<span></span>
+<div class="mini-leaf">✦</div>
+<span></span>
+</div>
+
 <p>
-Our emotions often shape the choices we make, even before logic begins to work.
+Our emotions often shape the choices we make,
+even before logic begins to work.
 </p>
+
+<div class="card-leaf">❦</div>
+
 </div>
 
 <div class="about-card">
-<h3>Stress & Human Behaviour</h3>
+
+<div class="card-icon">◎</div>
+
+<h3>Stress and Human Behaviour</h3>
+
+<div class="title-divider">
+<span></span>
+<div class="mini-leaf">✦</div>
+<span></span>
+</div>
+
 <p>
-Psychology explains how stress, anxiety, habits and social experiences affect everyday life.
+Psychology explains how stress,
+anxiety, habits and social
+experiences affect everyday life.
 </p>
+
+<div class="card-leaf">❦</div>
+
 </div>
 
 </div>
