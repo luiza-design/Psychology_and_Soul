@@ -264,11 +264,34 @@ background:rgba(255,255,255,.10);
 backdrop-filter:blur(10px);
 margin-bottom:20px;
 }
+about-card{
+animation: floating 4s ease-in-out infinite;
+}
+
+.about-card:nth-child(2){
+animation-delay:2s;
+}
+
+@keyframes floating{
+0%{
+transform:translateY(0px) scale(1);
+}
+
+50%{
+transform:translateY(-10px) scale(1.03);
+}
+
+100%{
+transform:translateY(0px) scale(1);
+}
+}
 
 .about-card h3{
 font-family:'Cormorant Garamond',serif;
-font-size:28px;
-margin-bottom:10px;
+font-size:36px;
+font-weight:700
+color-:#4d463d;
+letter-spacing:0.5px;
 }
 
 </style>
