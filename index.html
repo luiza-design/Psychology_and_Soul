@@ -265,15 +265,19 @@ margin:auto;
 }
 
 .about-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+gap:35px;
+margin-top:60px;
+flex-wrap:wrap;
 }
 
 .about-card{
 text-align:center;
-padding:55px 45px;
+padding:35px 30px;
+max width:420px;
+width:100%;
 border-radius:38px;
 background:rgba(255,255,255,.18);
 backdrop-filter:blur(18px);
@@ -320,7 +324,7 @@ color:#6e654f;
 
 .about-card h3{
 font-family:'Cormorant Garamond',serif;
-font-size:44px;
+font-size:34px;
 line-height:1.1;
 font-weight:600;
 color:#4f4635;
@@ -328,7 +332,7 @@ margin-bottom:18px;
 }
 
 .about-card p{
-font-size:22px;
+font-size:17px;
 line-height:1.9;
 color:#5f5a4d;
 max-width:420px;
