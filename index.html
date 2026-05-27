@@ -165,7 +165,15 @@ display:flex;
 .psychology-text{
 max-width:650px;
 }
-
+.psychology-text{
+max-width:650px;
+font-size:21px;
+line-height:1.9;
+color:#5f5a4d;
+margin:auto;
+text-align:center;
+font-weight:400;
+}
 .hero h1{
 font-family:'Cormorant Garamond',serif;
 font-size:84px;
@@ -245,9 +253,15 @@ text-transform:uppercase;
 }
 
 .section-title h2{
-font-family:'Cormorant Garamond',serif;
-font-size:58px;
-margin-top:10px;
+font-family:'Cormorant Garamond', serif;
+font-size:88px;
+font-weight:600;
+line-height:1.05;
+letter-spacing:-1px;
+color:#5b533d;
+text-align:center;
+max-width:900px;
+margin:auto;
 }
 
 .about-grid{
@@ -258,34 +272,56 @@ align-items:center;
 }
 
 .about-card{
-padding:30px;
-border-radius:20px;
-background:rgba(255,255,255,.10);
-backdrop-filter:blur(10px);
+padding:45px;
+border-radius:35px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.35);
+box-shadow:0 10px 35px rgba(0,0,0,.12);
 margin-bottom:20px;
+position:relative;
+overflow:hidden;
 }
 about-card{
 animation: floating 4s ease-in-out infinite;
 }
 
 .about-card:nth-child(2){
-animation-delay:2s;
+animation-delay:3s;
 }
 
-@keyframes floating{
+@keyframes floatcards{
 0%{
-transform:translateY(0px) scale(1);
+transform:translateY(0px);
 }
 
 50%{
-transform:translateY(-10px) scale(1.03);
+transform:translateY(-12px);
 }
 
 100%{
-transform:translateY(0px) scale(1);
+transform:translateY(0px);
 }
+}
+.title-divider{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:18px;
+margin:30px 0 50px;
 }
 
+.title-divider span{
+width:90px;
+height:1px;
+background:#8a8367;
+opacity:.5;
+}
+
+.mini-leaf{
+font-size:18px;
+color:#8a8367;
+}
 .about-card h3{
 font-family:'Cormorant Garamond',serif;
 font-size:36px;
@@ -361,6 +397,11 @@ letter-spacing:0.5px;
 <div class="section-title">
 
 <h2>How Psychology Affects Everyday Life</h2>
+<div class="title-divider">
+<span></span>
+<div class="mini-leaf">✦</div>
+<span></span>
+</div>
 </div>
 
 <div class="about-grid">
